@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Evan Fadly</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=T…0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="bg-gradient-to-b from-black to-pink-950 text-white">
+    <!-- Header -->
+    <!-- start navbar -->
+    <nav class="fixed top-0 w-full bg-transparent backdrop-blur-md text-white z-50">
+        <div class="max-w-[1400px] mx-auto px-6 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- logo vnn. -->
+                <p class="sm:text-[15px] md:text-[20px] lg:text-[25px] font-bold">
+                    VNN.
+                </p>
+                <!-- nav menu -->
+                <div class="hidden md:flex space-x-[70px] font-semibold">
+                    <a href="#home" class="hover:text-pink-500">Home</a>
+                    <a href="#about" class="hover:text-pink-500">About</a>
+                    <a href="#project" class="hover:text-pink-500">Project</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col-reverse sm:flex-row items-center justify-center min-h-screen px-4 sm:px-12">
+        <!-- Left Content -->
+        <div class="flex-1 space-y-[20px] p-2 sm:space-y-[20px] md:space-y-[20px] lg:space-y-[20px] xl:mr-[250px]">
+            <div class="space-y-[-15px] sm:space-y-[5px] md:space-y-[-15px] lg:space-y-[-15px] xl:space-y-[-20px]">
+                <h2 class="text-[35px] sm:text-[35px] md:text-[45px] lg:text-[55px] xl:text-[60px] font-bold ">
+                    Hii There! 👋</h2>
+                <h2
+                    class="text-[35px] sm:text-[35px] md:text-[45px] lg:text-[55px] xl:text-[70px] font-bold text-pink-500">
+                    I'M Evan Fadly</h1>
+            </div>
+            <p class="text-white font-thin mb-6 text-[15px] sm:text-[15px] md:text-[20px] lg:text-[25px]">
+                A passionate web developer crafting modern and responsive websites.
+                Let’s build something amazing together!
+            </p>
+            <div class="flex justify-center sm:justify-start space-x-4">
+                <a href="#"
+                    class="border border-pink-500 text-white rounded-md px-3 py-3 mt-1 mb-2 text-[10px] sm:text-[10px] md:text-[12px] lg:text-[15px] hover:border-pink-900">Download
+                    CV</a>
+                <a href="#"
+                    class="text-white hover:text-pink-500 text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem]"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="#"
+                    class="text-white hover:text-pink-500 text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem]"><i
+                        class="fab fa-github"></i></a>
+                <a href="#"
+                    class="text-white hover:text-pink-500 text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem]"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Content -->
+        <div id="coding-animation"
+            class="xl:flex-1 items-center text-center mt-[70px] sm:ml-[80px] md:mt-[0px] md:ml-[80px] md:w-[100px] lg:ml-[80px] xl:ml-[80px]">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Lottie Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('coding-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'src/animation.json'
+        });
+    </script>
+</body>
+
+</html>
