@@ -24,10 +24,26 @@
                     VNN.
                 </p>
                 <!-- nav menu -->
-                <div class="hidden md:flex space-x-[70px] font-semibold">
+                <div id="menu" class="hidden md:flex space-x-[70px] font-semibold">
                     <a href="#home" class="hover:text-pink-500">Home</a>
                     <a href="#about" class="hover:text-pink-500">About</a>
                     <a href="#project" class="hover:text-pink-500">Project</a>
+                </div>
+
+                <!-- nav hamburger -->
+                <div class="relative md:hidden">
+                    <button id="menu-btn" class="text-[19px]">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div id="mobile-menu" class="hidden absolute right-0 top-10 bg-black/70 border border-white shadow-lg rounded-lg w-48 p-4 z-50 
+           transition-all duration-300 ease-in-out opacity-0 -translate-y-10">
+                        <ul class="space-y-4 font-semibold text-white">
+                            <li><a href="#home" class="block hover:text-pink-500">Home</a></li>
+                            <li><a href="#about" class="block hover:text-pink-500">About</a></li>
+                            <li><a href="#project" class="block hover:text-pink-500">Project</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,13 +55,13 @@
         <!-- Left Content -->
         <div class="flex-1 space-y-[20px] p-2 sm:space-y-[20px] md:space-y-[20px] lg:space-y-[20px] xl:mr-[250px]">
             <div class="space-y-[-15px] sm:space-y-[5px] md:space-y-[-15px] lg:space-y-[-15px] xl:space-y-[-20px]">
-                <h2 class="text-[35px] sm:text-[35px] md:text-[45px] lg:text-[55px] xl:text-[60px] font-bold ">
+                <h2 class="text-[35px] sm:text-[35px] md:text-[35px] lg:text-[55px] xl:text-[60px] font-bold ">
                     Hii There! 👋</h2>
                 <h2
-                    class="text-[35px] sm:text-[35px] md:text-[45px] lg:text-[55px] xl:text-[70px] font-bold text-pink-500">
+                    class="text-[35px] sm:text-[35px] md:text-[35px] lg:text-[55px] xl:text-[70px] font-bold text-pink-500">
                     I'M Evan Fadly</h1>
             </div>
-            <p class="text-white font-thin mb-6 text-[15px] sm:text-[15px] md:text-[20px] lg:text-[25px]">
+            <p class="text-white font-thin mb-6 text-[15px] sm:text-[15px] md:text-[10px] lg:text-[25px]">
                 A passionate web developer crafting modern and responsive websites.
                 Let’s build something amazing together!
             </p>
@@ -67,7 +83,7 @@
 
         <!-- Right Content -->
         <div id="coding-animation"
-            class="xl:flex-1 items-center text-center mt-[70px] sm:ml-[80px] md:mt-[0px] md:ml-[80px] md:w-[100px] lg:ml-[80px] xl:ml-[80px]">
+            class="xl:flex-1 items-center text-center mt-[70px] sm:ml-[80px] md:mt-[0px] md:ml-[80px] md:w-[300px] lg:ml-[80px] xl:ml-[80px]">
         </div>
     </section>
 
@@ -97,6 +113,8 @@
             path: 'src/animation.json'
         });
     </script>
+
+    <script src="/src/js/main.js"></script>
 </body>
 
 </html>
