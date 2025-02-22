@@ -87,13 +87,15 @@
                     <span id="typed-text"></span>
                 </h2>
             </div>
-            <p class="text-white font-thin mb-6 text-[15px] sm:text-[10px] md:text-[10px] lg:text-[17px] xl:text-[20px]">
+            <p
+                class="text-white font-thin mb-6 text-[15px] sm:text-[12px] md:text-[15px] lg:text-[17px] xl:text-[20px]">
                 A passionate web developer crafting modern and responsive websites.
                 Let’s build something amazing together!
             </p>
             <div class="flex justify-center sm:justify-start space-x-4">
                 <a href="#"
-                    class="border border-[#8d0eb4] text-white rounded-md px-3 py-3 mt-1 mb-2 text-[10px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[15px] hover:border-[#670087]">Download CV</a>
+                    class="border border-[#8d0eb4] text-white rounded-md px-3 py-3 mt-1 mb-2 text-[10px] sm:text-[8px] md:text-[12px] lg:text-[14px] xl:text-[15px] hover:border-[#670087]">Download
+                    CV</a>
                 <a href="#"
                     class="text-white hover:text-[#670087] text-[2rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.3rem] xl:text-[2.5rem]"><i
                         class="fab fa-linkedin"></i></a>
@@ -107,9 +109,8 @@
         </div>
 
         <!-- Right Content -->
-        <div id="coding-animation"
-            class="xl:flex-1 items-center text-center mt-[70px] sm:ml-[80px] md:mt-[0px] md:ml-[80px] md:w-[300px] lg:ml-[80px] xl:ml-[80px]"
-            data-aos="fade-left" data-aos-duration="2000">
+        <div id="coding-animation" class="xl:flex-1 items-center text-center mt-[70px] sm:mt-[0px]" data-aos="fade-left"
+            data-aos-duration="2000">
         </div>
     </section>
 
@@ -277,6 +278,46 @@
             path: 'src/animation.json'
         });
     </script>
+
+    <style>
+        #coding-animation {
+             /* Default */
+        max-width: 400px;
+        min-width: 300px;
+    }
+
+        @media (min-width: 640px) {
+
+            /* Mobile */
+            #coding-animation {
+                width: 300px;
+            }
+        }
+
+        @media (min-width: 641px) and (max-width: 768px) {
+
+            /* Tablet */
+            #coding-animation {
+                width: 340px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+
+            /* Laptop */
+            #coding-animation {
+                width: 430px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+
+            /* Layar besar */
+            #coding-animation {
+                width: 450px;
+            }
+        }
+    </style>
 
     <!-- AOS Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
