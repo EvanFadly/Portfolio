@@ -109,7 +109,7 @@
         </div>
 
         <!-- Right Content -->
-        <div id="coding-animation" class="xl:flex-1 items-center text-center mt-[70px] sm:mt-[0px]" data-aos="fade-left"
+        <div id="coding-animation" class="xl:flex-1 items-center text-center mt-[70px] sm:mt-[0px] " data-aos="fade-left"
             data-aos-duration="2000">
         </div>
     </section>
@@ -282,8 +282,9 @@
     <style>
         #coding-animation {
              /* Default */
-        max-width: 400px;
-        min-width: 300px;
+             width: min(400px, 90vw);
+             min-width: 300px;
+             max-width: 600px;
     }
 
         @media (min-width: 640px) {
@@ -306,15 +307,15 @@
 
             /* Laptop */
             #coding-animation {
-                width: 430px;
+                width: 400px;
             }
         }
 
-        @media (min-width: 1025px) {
+        @media (min-width: 1025px) and (max-width: 1440px) {
 
             /* Layar besar */
             #coding-animation {
-                width: 450px;
+                width: 500px;
             }
         }
     </style>
